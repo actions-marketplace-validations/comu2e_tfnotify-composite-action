@@ -5,7 +5,7 @@ inputs:
     description: "Setup terraform"
 runs:
   using: "composite"
-
+  steps:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:

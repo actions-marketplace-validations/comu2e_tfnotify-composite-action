@@ -32,6 +32,6 @@ runs:
 
     - name: Terraform Plan
       id: plan
-      run: terraform plan | tfnotify -config ../../.tfnotify/github.yaml plan
+      run: terraform plan | tfnotify -config .tfnotify/github.yaml plan
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
